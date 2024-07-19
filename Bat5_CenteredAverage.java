@@ -27,23 +27,22 @@ public class Bat5_CenteredAverage {
             }
         }
 
-        // İkinci döngü: Min ve max'leri hariç tutarak geri kalan değerleri toplar
+       
         for (int num : nums) {
             if (num == min && !minRemoved) {
-                // En küçük değerin bir kopyasını hariç tut
+            
                 minRemoved = true;
             } else if (num == max && !maxRemoved) {
-                // En büyük değerin bir kopyasını hariç tut
+              
                 maxRemoved = true;
             } else {
-                // Geçerli bir değer toplama ekleyin
+                
                 sum += num;
                 validCount++;
             }
         }
 
-        // Ortalama hesapla
-        // Toplam geçerli eleman sayısı dizinin toplam uzunluğundan iki eksik olmalı
+       
         int average = (validCount == 0) ? 0 : (sum / validCount);
         return average;
     }
