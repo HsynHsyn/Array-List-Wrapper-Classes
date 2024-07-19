@@ -6,7 +6,7 @@ import java.util.OptionalInt;
 public class Bat4_BigDiff {
     public static void main(String[] args) {
 
-        System.out.println(bigDiff(new int[]{2}));
+        System.out.println(bigDiff(new int[]{1, 2, 13, 2, 1, 13}));
 
     }
 
