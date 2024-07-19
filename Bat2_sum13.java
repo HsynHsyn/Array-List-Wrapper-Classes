@@ -32,15 +32,15 @@ public class Bat2_sum13 {
 
     /* Correct solution
     int sum = 0;
-        boolean skipNext = false;  // 13'ten sonraki sayıyı atlamak için bayrak
+        boolean skipNext = false;  
 
         for (int each : nums) {
             if (each == 13) {
-                skipNext = true; // 13'ü bulduğunda bayrağı ayarla
+                skipNext = true; 
             } else if (skipNext) {
-                skipNext = false; // Bir sonraki sayıyı atla ve bayrağı sıfırla
+                skipNext = false; 
             } else {
-                sum += each; // Toplamı artır
+                sum += each; 
             }
         }
 
